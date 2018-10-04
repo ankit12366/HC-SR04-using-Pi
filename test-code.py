@@ -14,7 +14,7 @@ GPIO.setup(ECHO,GPIO.IN)
 
 while True:
     GPIO.output(TRIG,GPIO.HIGH)
-    time.sleep(0.00001)
+    time.sleep(0.00001) #used for delay 
     GPIO.output(TRIG,GPIO.LOW)
 
     while(GPIO.input(ECHO)) == False:
